@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">FYPnew</string>
+    <string name="title_home">Home</string>
+    <string name="title_PhysicalActivity">Physical Activity</string>
+    <string name="title_VirtualActivity">Virtual Activity</string>
+    <string name="title_profile">Profile</string>
+    <!-- Title -->
+    <string name="msg_title">Welcome to Volunteering Platform</string>
+    <string name="msg_title2">Select your position to continue</string>
+    <string name="loginVolunteer">I am Volunteer</string>
+    <string name="loginOrganizer">I am Organizer</string>
+    <string name="msg_register">New To Here? Register an account.</string>
+    <string name="register">Register</string>
+    <!-- Register -->
+    <string name="Position">Who Are You?</string>
+    <string name="Volunteer">Volunteer</string>
+    <string name="Organizer">Organizer</string>
+    <string name="NameText">What is your name?</string>
+    <string name="Name">Name</string>
+    <string name="BirthdayText">When is your birthday?</string>
+    <string name="Birthday">Birthday(dd/mm/yyyy)</string>
+    <string name="ContactText">What is your contact number?</string>
+    <string name="ContactNumber">Contact Number</string>
+    <string name="EmailText">What is your email?</string>
+    <string name="Email">Email</string>
+    <string name="stateText">Where you live?</string>
+    <string-array name="state_group">
+        <item>Select a State</item>
+        <item>Johor</item>
+        <item>Kedah</item>
+        <item>Kelantan</item>
+        <item>Melaka</item>
+        <item>Negeri Sembilan</item>
+        <item>Pahang</item>
+        <item>Penang</item>
+        <item>Perak</item>
+        <item>Perlis</item>
+        <item>Sabah</item>
+        <item>Sarawak</item>
+        <item>Selangor</item>
+        <item>Terengganu</item>
+        <item>Wilayah Persekutuan (Kuala Lumpur)</item>
+        <item>Wilayah Persekutuan (Labuan)</item>
+        <item>Wilayah Persekutuan (Putrajaya)</item>
+    </string-array>
+    <string name="PasswordText">Not less than 6 word.</string>
+    <string name="Password">Password</string>
+    <string name="ConfirmPassword">Confirm Password</string>
+    <!-- LoginPage-->
+    <string name="msg_volunteer">Login As Volunteer</string>
+    <string name="msg_organizer">Login As Organizer</string>
+    <string name="login">Login</string>
+    <!-- Profile-->
+    <string name="postedText">Activity Posted</string>
+    <string name="activityDoneText">Activity Completed</string>
+    <string name="ongoActivity">Ongoing Activity</string>
+    <string name="addActivity">Add New Activity</string>
+    <string name="logout">Logout</string>
+
+    <string name="userTag">Tags</string>
+    <string name="upComeActivity">Upcoming Activity</string>
+    <string name="hourVolunteer">Volunteers Hours</string>
+    <string name="friendList">My Friends</string>
+    <string name="viewCertificate">View</string>
+    <!-- Add Activity-->
+    <string name="activityName">Activity Name</string>
+    <string name="activityType">Activity Type</string>
+    <string name="activityPhysical">Physical</string>
+    <string name="activityVirtual">Virtual</string>
+    <string name="activityLocation">Location</string>
+    <string name="activityTag">Tag</string>
+    <string name="activityDue">Date/Due</string>
+    <string name="chooseDate">Choose A Date</string>
+    <string name="activityTime">Time Duration</string>
+    <string name="activityStartTime">Start Time</string>
+    <string name="activityEndTime">End Time</string>
+    <string name="activityDescription">Description</string>
+    <string name="activityVolunteerNeed">Volunteer Need</string>
+    <string name="post">Post</string>
+    <string name="to">TO</string>
+    <string name="person">Person</string>
+    <string name="friendApplied">Friends Applied</string>
+
+    <!-- Tag-->
+    <string name="addTag">Add Tag</string>
+    <string name="textTag">Choose Maximum 3 tags</string>
+    <string name="typeCaring">Caring</string>
+    <string name="typeNurseHouse">Nurse House</string>
+    <string name="typeCommunityService">Community Service</string>
+    <string name="typeAnimalShelter">Animal Shelter</string>
+    <string name="typeEnvironment">Environment</string>
+    <string name="typeCleanup">Clean-up</string>
+    <string name="typePlanting">Planting</string>
+    <string name="typeOutdoor">Outdoor</string>
+    <string name="typeIndoor">Indoor</string>
+    <string name="typeVideoClip">Video Clip</string>
+    <string name="typeDigital">Digital</string>
+    <string name="typeSchool">School</string>
+    <string name="typeDesign">Design</string>
+    <string name="typeOther">Other</string>
+    <string name="clear">Clear</string>
+    <string name="confirm">Confirm</string>
+    <string name="save">Save</string>
+
+    <!-- Details of activity-->
+    <string name="apply">Apply</string>
+    <string name="applied">Applied</string>
+    <string name="markAsDone">Mark As Done</string>
+    <string name="dueDate">Due Date</string>
+    <string name="full">Full</string>
+    <string name="chooseTag">Choose Tag to Filter</string>
+
+
+    <!-- Home Page -->
+    <string name="welcome">Welcome Back!</string>
+    <string name="buttonText">Click the button to quick search suitable activities for you</string>
+    <string name="homeApplied">Applied Activity</string>
+
+    <!-- virtual details -->
+    <string name="selectFile">Select file to upload</string>
+    <string name="select">Select</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="download">Download</string>
+    <string name="checkUpload">Check Upload</string>
+    <string name="checkApplied">Check Applied</string>
+
+
+    <!-- upload list -->
+    <string name="uploadBy">Uploaded By</string>
+
+    <!-- friend -->
+    <string name="addFriend">Add Friend</string>
+    <string name="addFriendemail">User Email</string>
+    <string name="friendRequest">FriendRequest</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="ranking">Ranking</string>
+    <string name="Value">Value</string>
+
+
+</resources>

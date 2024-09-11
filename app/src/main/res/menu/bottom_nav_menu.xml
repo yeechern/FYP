@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/volunteerActivityFragment"
+        android:icon="@drawable/explore"
+        android:title="@string/title_PhysicalActivity" />
+
+    <item
+        android:id="@+id/virtualActivityFragment"
+        android:icon="@drawable/online"
+        android:title="@string/title_VirtualActivity" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile"
+        android:title="@string/title_profile" />
+
+
+
+</menu>

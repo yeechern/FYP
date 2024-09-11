@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout16"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detailsVirtualActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewVDetailsTag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewVDetailsTag1"
+                app:layout_constraintStart_toEndOf="@+id/textViewVDetailsTag1"
+                app:layout_constraintTop_toTopOf="@+id/textViewVDetailsTag1" />
+
+            <TextView
+                android:id="@+id/textViewVDetailsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewVDetailsDescrib"
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:background="#DCD4D4"
+                android:text="TextView"
+                android:textColor="#090606"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/textViewVDetailsTitle"
+                app:layout_constraintTop_toBottomOf="@+id/textViewVDetailsTitle" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/dueDate"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@+id/textViewVDetailsTitle"
+                app:layout_constraintTop_toBottomOf="@+id/textViewVDetailsTag3" />
+
+            <TextView
+                android:id="@+id/textViewVDetailsDue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/textView19"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/Organizer"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@+id/textView19"
+                app:layout_constraintTop_toBottomOf="@+id/textViewVDetailsDue" />
+
+            <TextView
+                android:id="@+id/textViewVDetailsOrganizer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="TextView"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/textView34"
+                app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+            <TextView
+                android:id="@+id/textViewVDetailsOrgaEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="TextView"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/textViewVDetailsOrganizer"
+                app:layout_constraintTop_toBottomOf="@+id/textViewVDetailsOrganizer" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/selectFile"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@+id/textView34"
+                app:layout_constraintTop_toBottomOf="@+id/textViewVDetailsOrgaEmail" />
+
+            <TextView
+                android:id="@+id/textViewVDetailsUploaded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/textView32"
+                app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+            <Button
+                android:id="@+id/buttonVSelectFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/select"
+                app:layout_constraintStart_toStartOf="@+id/textView32"
+                app:layout_constraintTop_toBottomOf="@+id/textViewVDetailsUploaded" />
+
+            <Button
+                android:id="@+id/buttonVDetailsSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/submit"
+                app:layout_constraintStart_toStartOf="@+id/buttonVSelectFile"
+                app:layout_constraintTop_toBottomOf="@+id/buttonVSelectFile" />
+
+            <Button
+                android:id="@+id/buttonVDetailsCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="120dp"
+                android:backgroundTint="#C61A1A"
+                android:text="@string/cancel"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonVDetailsSubmit" />
+
+            <Button
+                android:id="@+id/buttonVCheckUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkUpload"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonVSelectFile"
+                app:layout_constraintEnd_toEndOf="@+id/buttonVMarkDone"
+                app:layout_constraintStart_toStartOf="@+id/buttonVMarkDone"
+                app:layout_constraintTop_toBottomOf="@+id/textViewVDetailsUploaded" />
+
+            <Button
+                android:id="@+id/buttonVMarkDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/Red"
+                android:text="@string/markAsDone"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonVDetailsCancel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonVCheckApplied" />
+
+            <Button
+                android:id="@+id/buttonVApply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="40dp"
+                android:text="@string/apply"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonVDetailsSubmit" />
+
+            <Button
+                android:id="@+id/buttonVCheckApplied"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/checkApplied"
+                app:layout_constraintEnd_toEndOf="@+id/buttonVCheckUpload"
+                app:layout_constraintStart_toEndOf="@+id/buttonVSelectFile"
+                app:layout_constraintStart_toStartOf="@+id/buttonVCheckUpload"
+                app:layout_constraintTop_toBottomOf="@+id/buttonVCheckUpload" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/activityTag"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@+id/textViewVDetailsTitle"
+                app:layout_constraintTop_toBottomOf="@+id/textViewVDetailsDescrib" />
+
+            <TextView
+                android:id="@+id/textViewVDetailsTag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/textView51"
+                app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+            <TextView
+                android:id="@+id/textViewVDetailsTag3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/textViewVDetailsTag1"
+                app:layout_constraintTop_toBottomOf="@+id/textViewVDetailsTag1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

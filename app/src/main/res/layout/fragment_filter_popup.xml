@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout8"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".TagPopupFragment">
+
+
+    <ToggleButton
+        android:id="@+id/toggleButtonFVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="ToggleButton"
+        android:textOff="@string/typeVideoClip"
+        android:textOn="@string/typeVideoClip"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButtonFSchool"
+        app:layout_constraintStart_toEndOf="@+id/toggleButtonFSchool"
+        app:layout_constraintTop_toTopOf="@+id/toggleButtonFSchool" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonFAnimalShelter"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="ToggleButton"
+        android:textOff="@string/typeAnimalShelter"
+        android:textOn="@string/typeAnimalShelter"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButtonFDesign"
+        app:layout_constraintEnd_toEndOf="@+id/toggleButtonFNurseHouse"
+        app:layout_constraintTop_toTopOf="@+id/toggleButtonFDesign" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonFCaring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="30dp"
+        android:checked="false"
+        android:text="ToggleButton"
+        android:textOff="@string/typeCaring"
+        android:textOn="@string/typeCaring"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButtonFVideo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/toggleButtonFVideo"
+        app:layout_constraintTop_toTopOf="@+id/toggleButtonFVideo" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonFCleanup"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:checked="false"
+        android:text="ToggleButton"
+        android:textOff="@string/typeCleanup"
+        android:textOn="@string/typeCleanup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonFCommunityService"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:checked="false"
+        android:text="ToggleButton"
+        android:textOff="@string/typeCommunityService"
+        android:textOn="@string/typeCommunityService"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButtonFCleanup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toggleButtonFCleanup" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonFDesign"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:checked="false"
+        android:text="ToggleButton"
+        android:textOff="@string/typeDesign"
+        android:textOn="@string/typeDesign"
+        app:layout_constraintStart_toStartOf="@+id/toggleButtonFCleanup"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButtonFCleanup" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonFDigital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="30dp"
+        android:checked="false"
+        android:text="ToggleButton"
+        android:textOff="@string/typeDigital"
+        android:textOn="@string/typeDigital"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButtonFPlanting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/toggleButtonFPlanting"
+        app:layout_constraintTop_toTopOf="@+id/toggleButtonFPlanting" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonFEnvironment"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ToggleButton"
+        android:textOff="@string/typeEnvironment"
+        android:textOn="@string/typeEnvironment"
+        app:layout_constraintStart_toStartOf="@+id/toggleButtonFDesign"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButtonFDesign" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonFNurseHouse"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="@string/typeNurseHouse"
+        android:textOn="@string/typeNurseHouse"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButtonFEnvironment"
+        app:layout_constraintEnd_toEndOf="@+id/toggleButtonFDigital"
+        app:layout_constraintTop_toTopOf="@+id/toggleButtonFEnvironment" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonFOutdoor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ToggleButton"
+        android:textOff="@string/typeOutdoor"
+        android:textOn="@string/typeOutdoor"
+        app:layout_constraintStart_toStartOf="@+id/toggleButtonFEnvironment"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButtonFEnvironment" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonFPlanting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="ToggleButton"
+        android:textOff="@string/typePlanting"
+        android:textOn="@string/typePlanting"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButtonFOutdoor"
+        app:layout_constraintStart_toEndOf="@+id/toggleButtonFOutdoor"
+        app:layout_constraintTop_toTopOf="@+id/toggleButtonFOutdoor"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonFSchool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ToggleButton"
+        android:textOff="@string/typeSchool"
+        android:textOn="@string/typeSchool"
+        app:layout_constraintStart_toStartOf="@+id/toggleButtonFOutdoor"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButtonFOutdoor" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/chooseTag"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFClearTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButtonFOther" />
+
+    <Button
+        android:id="@+id/buttonFConfirmTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:text="@string/confirm"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonFClearTag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonFClearTag" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonFOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/typeOther"
+        android:textOff="@string/typeOther"
+        android:textOn="@string/typeOther"
+        app:layout_constraintEnd_toEndOf="@+id/toggleButtonFVideo"
+        app:layout_constraintStart_toStartOf="@+id/toggleButtonFVideo"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButtonFVideo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

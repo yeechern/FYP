@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAE3F6"
+    tools:context=".OrganizerProfileFragment">
+
+    <TextView
+        android:id="@+id/textViewOrganizerProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/cardViewOrganizerProfile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewOrganizerProfile"
+        android:layout_width="127dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="65dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewOrganizerProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/default_profile" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textViewOrganizerProfileState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewOrganizerProfileName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOrganizerProfileEmail" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewOrganizerProfile" />
+
+    <TextView
+        android:id="@+id/textViewActivityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/postedText"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textViewActivityComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="@string/activityDoneText"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewActivityText"
+        app:layout_constraintTop_toTopOf="@+id/textViewActivityText" />
+
+    <TextView
+        android:id="@+id/textViewMyActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/ongoActivity"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewActivityText"
+        app:layout_constraintTop_toBottomOf="@+id/textViewActivityPosted" />
+
+    <TextView
+        android:id="@+id/textViewActivitiesList"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#D3CCDC"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewMyActivity"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMyActivity" />
+
+    <Button
+        android:id="@+id/buttonOrganizerLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="@string/logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAddActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/addActivity"
+        app:layout_constraintEnd_toEndOf="@+id/textViewActivitiesList"
+        app:layout_constraintStart_toStartOf="@+id/textViewActivitiesList"
+        app:layout_constraintTop_toBottomOf="@+id/textViewActivitiesList" />
+
+    <TextView
+        android:id="@+id/textViewOrganizerProfileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/textViewOrganizerProfileName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOrganizerProfileName" />
+
+    <TextView
+        android:id="@+id/textViewOrganizerActivityFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="textView"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewActivityComplete"
+        app:layout_constraintTop_toBottomOf="@+id/textViewActivityComplete" />
+
+    <TextView
+        android:id="@+id/textViewActivityPosted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewActivityText"
+        app:layout_constraintTop_toBottomOf="@+id/textViewActivityText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

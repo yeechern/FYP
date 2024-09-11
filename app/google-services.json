@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "699468317169",
+    "project_id": "fyp-45e60",
+    "storage_bucket": "fyp-45e60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:699468317169:android:089d7cd1716a2c84a64450",
+        "android_client_info": {
+          "package_name": "my.edu.tarc.fyp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhISTXNhpaRI14xVu6n4mFT9jbYdypnqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:699468317169:android:74099e9f1e5a217ca64450",
+        "android_client_info": {
+          "package_name": "my.edu.tarc.fypnew"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhISTXNhpaRI14xVu6n4mFT9jbYdypnqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

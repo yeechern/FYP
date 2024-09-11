@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="my.edu.tarc.fypnew.TitleFragment"
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title" >
+        <action
+            android:id="@+id/action_titleFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_organizerLoginFragment"
+            app:destination="@id/organizerLoginFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_volunteerLoginFragment"
+            app:destination="@id/volunteerLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="my.edu.tarc.fypnew.registerFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_titleFragment"
+            app:destination="@id/titleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/organizerLoginFragment"
+        android:name="my.edu.tarc.fypnew.OrganizerLoginFragment"
+        android:label="fragment_organizer_login"
+        tools:layout="@layout/fragment_organizer_login" >
+        <action
+            android:id="@+id/action_organizerLoginFragment_to_titleFragment"
+            app:destination="@id/titleFragment" />
+        <action
+            android:id="@+id/action_organizerLoginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/volunteerLoginFragment"
+        android:name="my.edu.tarc.fypnew.VolunteerLoginFragment"
+        android:label="fragment_volunteer_login"
+        tools:layout="@layout/fragment_volunteer_login" >
+        <action
+            android:id="@+id/action_volunteerLoginFragment_to_titleFragment"
+            app:destination="@id/titleFragment" />
+        <action
+            android:id="@+id/action_volunteerLoginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/organizerProfileFragment"
+        android:name="my.edu.tarc.fypnew.OrganizerProfileFragment"
+        android:label="fragment_organizer_profile"
+        tools:layout="@layout/fragment_organizer_profile" >
+        <action
+            android:id="@+id/action_organizerProfileFragment_to_titleFragment"
+            app:destination="@id/titleFragment" />
+        <action
+            android:id="@+id/action_organizerProfileFragment_to_addActivityFragment"
+            app:destination="@id/addActivityFragment" />
+        <action
+            android:id="@+id/action_organizerProfileFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_organizerProfileFragment_to_addActivityFragment2"
+            app:destination="@id/addActivityFragment" />
+        <action
+            android:id="@+id/action_organizerProfileFragment_to_volunteerActivityFragment"
+            app:destination="@id/volunteerActivityFragment" />
+        <action
+            android:id="@+id/action_organizerProfileFragment_to_virtualActivityFragment"
+            app:destination="@id/virtualActivityFragment" />
+        <action
+            android:id="@+id/action_organizerProfileFragment_to_onGoActivity"
+            app:destination="@id/onGoActivity" />
+        <action
+            android:id="@+id/action_organizerProfileFragment_self"
+            app:destination="@id/organizerProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/volunteerProfileFragment"
+        android:name="my.edu.tarc.fypnew.VolunteerProfileFragment"
+        android:label="fragment_volunteer_profile"
+        tools:layout="@layout/fragment_volunteer_profile" >
+        <action
+            android:id="@+id/action_volunteerProfileFragment_to_titleFragment"
+            app:destination="@id/titleFragment" />
+        <action
+            android:id="@+id/action_volunteerProfileFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_volunteerProfileFragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_volunteerProfileFragment_to_volunteerActivityFragment"
+            app:destination="@id/volunteerActivityFragment" />
+        <action
+            android:id="@+id/action_volunteerProfileFragment_to_virtualActivityFragment"
+            app:destination="@id/virtualActivityFragment" />
+        <action
+            android:id="@+id/action_volunteerProfileFragment_to_onGoActivity"
+            app:destination="@id/onGoActivity" />
+        <action
+            android:id="@+id/action_volunteerProfileFragment_to_editVolunteerProfile"
+            app:destination="@id/editVolunteerProfile" />
+        <action
+            android:id="@+id/action_volunteerProfileFragment_to_appliedActivityFragment"
+            app:destination="@id/appliedActivityFragment" />
+        <action
+            android:id="@+id/action_volunteerProfileFragment_to_friendListFragment"
+            app:destination="@id/friendListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addActivityFragment"
+        android:name="my.edu.tarc.fypnew.AddActivityFragment"
+        android:label="fragment_add_activity"
+        tools:layout="@layout/fragment_add_activity" >
+        <action
+            android:id="@+id/action_addActivityFragment_to_organizerProfileFragment"
+            app:destination="@id/organizerProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/volunteerActivityFragment"
+        android:name="my.edu.tarc.fypnew.VolunteerActivityFragment"
+        android:label="fragment_volunteer_activity"
+        tools:layout="@layout/fragment_volunteer_activity" >
+        <action
+            android:id="@+id/action_volunteerActivityFragment_to_detailsVolunteerActivity"
+            app:destination="@id/detailsVolunteerActivity" />
+        <action
+            android:id="@+id/action_volunteerActivityFragment_to_virtualActivityFragment"
+            app:destination="@id/virtualActivityFragment" />
+        <action
+            android:id="@+id/action_volunteerActivityFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_volunteerActivityFragment_to_volunteerProfileFragment"
+            app:destination="@id/volunteerProfileFragment" />
+        <action
+            android:id="@+id/action_volunteerActivityFragment_to_organizerProfileFragment"
+            app:destination="@id/organizerProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/virtualActivityFragment"
+        android:name="my.edu.tarc.fypnew.VirtualActivityFragment"
+        android:label="fragment_virtual_activity"
+        tools:layout="@layout/fragment_virtual_activity" >
+        <action
+            android:id="@+id/action_virtualActivityFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_virtualActivityFragment_to_volunteerActivityFragment"
+            app:destination="@id/volunteerActivityFragment" />
+        <action
+            android:id="@+id/action_virtualActivityFragment_to_volunteerProfileFragment"
+            app:destination="@id/volunteerProfileFragment" />
+        <action
+            android:id="@+id/action_virtualActivityFragment_to_organizerProfileFragment"
+            app:destination="@id/organizerProfileFragment" />
+        <action
+            android:id="@+id/action_virtualActivityFragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_virtualActivityFragment_to_volunteerProfileFragment2"
+            app:destination="@id/volunteerProfileFragment" />
+        <action
+            android:id="@+id/action_virtualActivityFragment_to_organizerProfileFragment2"
+            app:destination="@id/organizerProfileFragment" />
+        <action
+            android:id="@+id/action_virtualActivityFragment_to_detailsVirtualActivity"
+            app:destination="@id/detailsVirtualActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/tagPopupFragment"
+        android:name="my.edu.tarc.fypnew.TagPopupFragment"
+        android:label="fragment_tag_popup"
+        tools:layout="@layout/fragment_tag_popup" />
+    <fragment
+        android:id="@+id/detailsVolunteerActivity"
+        android:name="my.edu.tarc.fypnew.DetailsVolunteerActivity"
+        android:label="fragment_details_volunteer_activity"
+        tools:layout="@layout/fragment_details_volunteer_activity" >
+        <action
+            android:id="@+id/action_detailsVolunteerActivity_to_volunteerActivityFragment"
+            app:destination="@id/volunteerActivityFragment" />
+        <action
+            android:id="@+id/action_detailsVolunteerActivity_to_onGoActivity"
+            app:destination="@id/onGoActivity" />
+        <action
+            android:id="@+id/action_detailsVolunteerActivity_to_appliedActivityFragment"
+            app:destination="@id/appliedActivityFragment" />
+        <action
+            android:id="@+id/action_detailsVolunteerActivity_to_checkAppliedFraagment"
+            app:destination="@id/checkAppliedFraagment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="my.edu.tarc.fypnew.HomeFragment"
+        android:label="fragment_home2"
+        tools:layout="@layout/fragment_home2" >
+        <action
+            android:id="@+id/action_homeFragment_to_organizerProfileFragment"
+            app:destination="@id/organizerProfileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_volunteerProfileFragment"
+            app:destination="@id/volunteerProfileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_volunteerActivityFragment"
+            app:destination="@id/volunteerActivityFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_virtualActivityFragment"
+            app:destination="@id/virtualActivityFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_suitablePopUpFragment"
+            app:destination="@id/suitablePopUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onGoActivity"
+        android:name="my.edu.tarc.fypnew.onGoActivity"
+        android:label="fragment_on_go_activity"
+        tools:layout="@layout/fragment_on_go_activity" >
+        <action
+            android:id="@+id/action_onGoActivity_to_organizerProfileFragment"
+            app:destination="@id/organizerProfileFragment" />
+        <action
+            android:id="@+id/action_onGoActivity_to_volunteerProfileFragment"
+            app:destination="@id/volunteerProfileFragment" />
+        <action
+            android:id="@+id/action_onGoActivity_to_detailsVolunteerActivity"
+            app:destination="@id/detailsVolunteerActivity" />
+        <action
+            android:id="@+id/action_onGoActivity_to_detailsVirtualActivity"
+            app:destination="@id/detailsVirtualActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/editVolunteerProfile"
+        android:name="my.edu.tarc.fypnew.EditVolunteerProfile"
+        android:label="fragment_edit_volunteer_profile"
+        tools:layout="@layout/fragment_edit_volunteer_profile" >
+        <action
+            android:id="@+id/action_editVolunteerProfile_to_volunteerProfileFragment"
+            app:destination="@id/volunteerProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appliedActivityFragment"
+        android:name="my.edu.tarc.fypnew.AppliedActivityFragment"
+        android:label="fragment_applied_activity"
+        tools:layout="@layout/fragment_applied_activity" >
+        <action
+            android:id="@+id/action_appliedActivityFragment_to_volunteerProfileFragment"
+            app:destination="@id/volunteerProfileFragment" />
+        <action
+            android:id="@+id/action_appliedActivityFragment_to_detailsVolunteerActivity"
+            app:destination="@id/detailsVolunteerActivity" />
+        <action
+            android:id="@+id/action_appliedActivityFragment_to_detailsVirtualActivity"
+            app:destination="@id/detailsVirtualActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/suitablePopUpFragment"
+        android:name="my.edu.tarc.fypnew.suitablePopUpFragment"
+        android:label="fragment_suitable_pop_up"
+        tools:layout="@layout/fragment_suitable_pop_up" >
+        <action
+            android:id="@+id/action_suitablePopUpFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_suitablePopUpFragment_to_detailsVolunteerActivity"
+            app:destination="@id/detailsVolunteerActivity" />
+        <action
+            android:id="@+id/action_suitablePopUpFragment_to_detailsVirtualActivity"
+            app:destination="@id/detailsVirtualActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsVirtualActivity"
+        android:name="my.edu.tarc.fypnew.detailsVirtualActivity"
+        android:label="fragment_details_virtual_activity"
+        tools:layout="@layout/fragment_details_virtual_activity" >
+        <action
+            android:id="@+id/action_detailsVirtualActivity_to_virtualActivityFragment"
+            app:destination="@id/virtualActivityFragment" />
+        <action
+            android:id="@+id/action_detailsVirtualActivity_to_checkUploadFragment"
+            app:destination="@id/checkUploadFragment" />
+        <action
+            android:id="@+id/action_detailsVirtualActivity_to_checkAppliedFraagment"
+            app:destination="@id/checkAppliedFraagment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkUploadFragment"
+        android:name="my.edu.tarc.fypnew.checkUploadFragment"
+        android:label="fragment_check_upload"
+        tools:layout="@layout/fragment_check_upload" >
+        <action
+            android:id="@+id/action_checkUploadFragment_to_detailsVirtualActivity"
+            app:destination="@id/detailsVirtualActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkAppliedFraagment"
+        android:name="my.edu.tarc.fypnew.CheckAppliedFraagment"
+        android:label="fragment_check_applied_fraagment"
+        tools:layout="@layout/fragment_check_applied_fraagment" >
+        <action
+            android:id="@+id/action_checkAppliedFraagment_to_detailsVolunteerActivity"
+            app:destination="@id/detailsVolunteerActivity" />
+        <action
+            android:id="@+id/action_checkAppliedFraagment_to_detailsVirtualActivity"
+            app:destination="@id/detailsVirtualActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/friendListFragment"
+        android:name="my.edu.tarc.fypnew.FriendListFragment"
+        android:label="fragment_friend_list"
+        tools:layout="@layout/fragment_friend_list" >
+        <action
+            android:id="@+id/action_friendListFragment_to_addFriendPopUp"
+            app:destination="@id/addFriendPopUp" />
+        <action
+            android:id="@+id/action_friendListFragment_to_leaderBoardFragment"
+            app:destination="@id/leaderBoardFragment" />
+        <action
+            android:id="@+id/action_friendListFragment_to_volunteerProfileFragment"
+            app:destination="@id/volunteerProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/leaderBoardFragment"
+        android:name="my.edu.tarc.fypnew.LeaderBoardFragment"
+        android:label="fragment_leader_board"
+        tools:layout="@layout/fragment_leader_board" />
+    <fragment
+        android:id="@+id/addFriendPopUp"
+        android:name="my.edu.tarc.fypnew.AddFriendPopUp"
+        android:label="fragment_add_friend_pop_up"
+        tools:layout="@layout/fragment_add_friend_pop_up" />
+    <fragment
+        android:id="@+id/filterPopupFragment"
+        android:name="my.edu.tarc.fypnew.FilterPopupFragment"
+        android:label="fragment_filter_popup"
+        tools:layout="@layout/fragment_filter_popup" />
+</navigation>
